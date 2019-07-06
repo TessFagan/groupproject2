@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shark Week</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+    <script src="https://apis.google.com/js/platform.js" async defer>
+    </script>
+    <meta name="google-signin-client_id"
+        content="710321542800-e16icoh2k0bk751rfdtb2nsma6asf4q3.apps.googleusercontent.com">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="#">
+            <img src="./Assets/Shark fin.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Shark Week
+        </a>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-6">
+                <h2>Welcome to SharkWeek!</h2>
+                <hr class="my-4">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md2"></div>
+            <div class="col-md-6"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-6">
+                <!-- <button type="button" class="btn btn-secondary btn-lg" id="userLoginModal">Login</button> -->
+                <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-6"><button type="button" class="btn btn-primary btn-lg" id="createAccount"
+                    onclick="location.href='https://sharkweek-54.herokuapp.com/createaccount'">Create
+                    an
+                    Account</button>
+            </div>
+        </div>
+    </div>
+    <div id=" login-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span>Login to your account</span>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="emailAuth">Enter your Email</label>
+                        <input type="email" class="form-control" id="emailAuth" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="passAuth">Enter your password</label>
+                        <input type="password" class="form-control" id="passAuth" placeholder="">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="submitLogin">Submit</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./app/app.js"></script>
+
+</body>
+
+</html>
